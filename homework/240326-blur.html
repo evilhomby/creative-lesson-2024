@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        overflow: hidden;
+        background: #000;
+    }
+    .container {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        filter:blur(100px);
+    }
+    .container div {
+        border-radius: 100%;
+        position: absolute;
+        animation: 1s shake ease-in-out infinite alternate;
+    }
+    
+    .container div:nth-child(5n) {
+        animation-duration: 1.5s;
+    }
+
+    .container div:nth-child(5n+1) {
+        animation-duration: 1.6s;
+        animation-delay: -1.5s;
+    }
+
+    .container div:nth-child(5n+2) {
+        animation-duration: 1.7s;
+    }
+    
+    .container div:nth-child(5n+3) {
+        animation-duration: 1.8s;
+        animation-delay: -1.6s;
+    }
+
+    .container div:nth-child(5n+4) {
+        animation-duration: 1.9s;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translateX(500px) scale(5);
+        }
+        100% {
+            transform: translateX(-500px) scale(1);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="top:220px;left:675px;width:38px;height:38px;background:rgb(180,147,124);"></div>
+        <div style="top:648px;left:1749px;width:44px;height:44px;background:rgb(213,174,62);"></div>
+        <div style="top:504px;left:641px;width:35px;height:35px;background:rgb(183,0,8);"></div>
+        <div style="top:23px;left:152px;width:38px;height:38px;background:rgb(185,9,251);"></div>
+        <div style="top:486px;left:1118px;width:43px;height:43px;background:rgb(30,159,120);"></div>
+        <div style="top:405px;left:900px;width:53px;height:53px;background:rgb(195,12,187);"></div>
+        <div style="top:205px;left:1337px;width:36px;height:36px;background:rgb(78,186,240);"></div>
+        <div style="top:392px;left:770px;width:24px;height:24px;background:rgb(85,48,142);"></div>
+        <div style="top:345px;left:428px;width:31px;height:31px;background:rgb(182,24,158);"></div>
+        <div style="top:329px;left:898px;width:46px;height:46px;background:rgb(0,170,214);"></div>
+        <div style="top:672px;left:672px;width:50px;height:50px;background:rgb(183,249,128);"></div>
+        <div style="top:151px;left:1412px;width:34px;height:34px;background:rgb(66,52,16);"></div>
+        <div style="top:540px;left:462px;width:30px;height:30px;background:rgb(76,12,135);"></div>
+        <div style="top:504px;left:1437px;width:28px;height:28px;background:rgb(164,39,22);"></div>
+        <div style="top:616px;left:938px;width:22px;height:22px;background:rgb(103,174,243);"></div>
+        <div style="top:142px;left:678px;width:58px;height:58px;background:rgb(21,227,13);"></div>
+        <div style="top:108px;left:101px;width:23px;height:23px;background:rgb(16,107,44);"></div>
+        <div style="top:717px;left:966px;width:49px;height:49px;background:rgb(38,249,127);"></div>
+        <div style="top:768px;left:140px;width:45px;height:45px;background:rgb(54,251,160);"></div>
+        <div style="top:51px;left:487px;width:53px;height:53px;background:rgb(237,200,156);"></div>
+        <div style="top:110px;left:594px;width:22px;height:22px;background:rgb(49,198,145);"></div>
+        <div style="top:227px;left:851px;width:41px;height:41px;background:rgb(219,239,202);"></div>
+        <div style="top:157px;left:1765px;width:30px;height:30px;background:rgb(55,132,137);"></div>
+        <div style="top:217px;left:1047px;width:41px;height:41px;background:rgb(49,200,29);"></div>
+        <div style="top:90px;left:710px;width:46px;height:46px;background:rgb(186,237,126);"></div>
+        <div style="top:511px;left:1532px;width:50px;height:50px;background:rgb(251,254,153);"></div>
+        <div style="top:40px;left:1080px;width:22px;height:22px;background:rgb(188,227,81);"></div>
+        <div style="top:691px;left:874px;width:54px;height:54px;background:rgb(30,32,178);"></div>
+        <div style="top:6px;left:933px;width:50px;height:50px;background:rgb(247,7,248);"></div>
+        <div style="top:187px;left:512px;width:40px;height:40px;background:rgb(237,40,5);"></div>
+        <div style="top:724px;left:1537px;width:56px;height:56px;background:rgb(229,174,133);"></div>
+        <div style="top:795px;left:1270px;width:30px;height:30px;background:rgb(181,86,95);"></div>
+        <div style="top:618px;left:1363px;width:60px;height:60px;background:rgb(175,156,109);"></div>
+        <div style="top:739px;left:977px;width:42px;height:42px;background:rgb(177,21,77);"></div>
+        <div style="top:537px;left:1841px;width:52px;height:52px;background:rgb(174,93,146);"></div>
+        <div style="top:559px;left:640px;width:54px;height:54px;background:rgb(33,133,102);"></div>
+        <div style="top:140px;left:275px;width:44px;height:44px;background:rgb(0,24,87);"></div>
+        <div style="top:669px;left:1825px;width:56px;height:56px;background:rgb(174,244,202);"></div>
+        <div style="top:134px;left:328px;width:57px;height:57px;background:rgb(198,202,106);"></div>
+        <div style="top:781px;left:573px;width:41px;height:41px;background:rgb(112,228,208);"></div>
+        <div style="top:119px;left:408px;width:27px;height:27px;background:rgb(63,69,228);"></div>
+        <div style="top:434px;left:1429px;width:52px;height:52px;background:rgb(15,150,180);"></div>
+        <div style="top:535px;left:327px;width:25px;height:25px;background:rgb(202,230,194);"></div>
+        <div style="top:599px;left:1904px;width:43px;height:43px;background:rgb(229,207,228);"></div>
+        <div style="top:321px;left:597px;width:20px;height:20px;background:rgb(39,90,161);"></div>
+        <div style="top:348px;left:915px;width:59px;height:59px;background:rgb(156,56,198);"></div>
+        <div style="top:104px;left:722px;width:33px;height:33px;background:rgb(65,161,54);"></div>
+        <div style="top:519px;left:848px;width:59px;height:59px;background:rgb(20,163,142);"></div>
+        <div style="top:433px;left:558px;width:20px;height:20px;background:rgb(235,66,102);"></div>
+        <div style="top:792px;left:1572px;width:52px;height:52px;background:rgb(213,118,66);"></div>
+        <div style="top:577px;left:690px;width:39px;height:39px;background:rgb(155,39,2);"></div>
+        <div style="top:227px;left:692px;width:36px;height:36px;background:rgb(130,171,195);"></div>
+        <div style="top:78px;left:1904px;width:39px;height:39px;background:rgb(47,224,212);"></div>
+        <div style="top:391px;left:1243px;width:47px;height:47px;background:rgb(207,199,96);"></div>
+        <div style="top:614px;left:209px;width:26px;height:26px;background:rgb(228,219,227);"></div>
+        <div style="top:788px;left:1035px;width:24px;height:24px;background:rgb(85,3,55);"></div>
+        <div style="top:670px;left:405px;width:26px;height:26px;background:rgb(192,58,134);"></div>
+        <div style="top:619px;left:630px;width:21px;height:21px;background:rgb(106,170,193);"></div>
+        <div style="top:778px;left:1658px;width:24px;height:24px;background:rgb(39,185,206);"></div>
+        <div style="top:713px;left:289px;width:25px;height:25px;background:rgb(92,211,176);"></div>
+        <div style="top:414px;left:542px;width:27px;height:27px;background:rgb(224,164,178);"></div>
+        <div style="top:418px;left:1440px;width:22px;height:22px;background:rgb(38,6,17);"></div>
+        <div style="top:650px;left:1347px;width:22px;height:22px;background:rgb(149,46,118);"></div>
+        <div style="top:479px;left:477px;width:24px;height:24px;background:rgb(138,109,208);"></div>
+        <div style="top:632px;left:1333px;width:33px;height:33px;background:rgb(106,67,86);"></div>
+        <div style="top:518px;left:784px;width:52px;height:52px;background:rgb(1,139,157);"></div>
+        <div style="top:230px;left:924px;width:42px;height:42px;background:rgb(101,180,77);"></div>
+        <div style="top:402px;left:1377px;width:47px;height:47px;background:rgb(219,236,13);"></div>
+        <div style="top:195px;left:69px;width:52px;height:52px;background:rgb(162,91,69);"></div>
+        <div style="top:308px;left:622px;width:45px;height:45px;background:rgb(142,247,87);"></div>
+        <div style="top:662px;left:372px;width:59px;height:59px;background:rgb(246,247,177);"></div>
+        <div style="top:340px;left:312px;width:38px;height:38px;background:rgb(89,183,63);"></div>
+        <div style="top:600px;left:1668px;width:56px;height:56px;background:rgb(99,80,66);"></div>
+        <div style="top:630px;left:1580px;width:46px;height:46px;background:rgb(185,208,88);"></div>
+        <div style="top:0px;left:537px;width:33px;height:33px;background:rgb(49,163,243);"></div>
+        <div style="top:62px;left:1516px;width:26px;height:26px;background:rgb(16,224,30);"></div>
+        <div style="top:73px;left:32px;width:40px;height:40px;background:rgb(175,107,54);"></div>
+        <div style="top:333px;left:543px;width:23px;height:23px;background:rgb(101,223,189);"></div>
+        <div style="top:687px;left:1875px;width:50px;height:50px;background:rgb(101,120,176);"></div>
+        <div style="top:340px;left:165px;width:47px;height:47px;background:rgb(111,176,179);"></div>
+        <div style="top:472px;left:368px;width:37px;height:37px;background:rgb(244,215,239);"></div>
+        <div style="top:149px;left:1423px;width:48px;height:48px;background:rgb(109,251,96);"></div>
+        <div style="top:121px;left:620px;width:34px;height:34px;background:rgb(186,173,125);"></div>
+        <div style="top:25px;left:487px;width:32px;height:32px;background:rgb(199,214,216);"></div>
+        <div style="top:660px;left:1511px;width:55px;height:55px;background:rgb(41,165,49);"></div>
+        <div style="top:379px;left:1707px;width:34px;height:34px;background:rgb(113,244,207);"></div>
+        <div style="top:296px;left:47px;width:31px;height:31px;background:rgb(53,57,14);"></div>
+        <div style="top:56px;left:1310px;width:27px;height:27px;background:rgb(99,156,155);"></div>
+        <div style="top:684px;left:325px;width:38px;height:38px;background:rgb(3,18,1);"></div>
+        <div style="top:673px;left:679px;width:29px;height:29px;background:rgb(41,58,154);"></div>
+        <div style="top:479px;left:1909px;width:22px;height:22px;background:rgb(192,23,110);"></div>
+        <div style="top:602px;left:812px;width:26px;height:26px;background:rgb(214,49,113);"></div>
+        <div style="top:227px;left:1520px;width:60px;height:60px;background:rgb(159,167,210);"></div>
+        <div style="top:755px;left:664px;width:41px;height:41px;background:rgb(235,199,242);"></div>
+        <div style="top:319px;left:67px;width:24px;height:24px;background:rgb(6,59,78);"></div>
+        <div style="top:444px;left:1052px;width:52px;height:52px;background:rgb(46,157,251);"></div>
+        <div style="top:289px;left:1891px;width:46px;height:46px;background:rgb(207,82,237);"></div>
+        <div style="top:367px;left:1324px;width:47px;height:47px;background:rgb(135,19,100);"></div>
+        <div style="top:419px;left:1566px;width:52px;height:52px;background:rgb(11,108,124);"></div>
+        <div style="top:658px;left:960px;width:43px;height:43px;background:rgb(170,45,66);"></div>
+    </div>
+</body>
+</html>

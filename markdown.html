@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.2" />
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html,
+      body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+        document.documentElement.classList.toggle('dark', true)
+      }
+    </script>
+    <link rel="icon" href="/favicon.ico"><title>寫筆記必學的 Markdown 語法 | 創意部課程 (2024)</title><meta name="description" content="">
+    <link rel="preload" href="/creative-lesson-2024/assets/style-MN8_jJpL.css" as="style"><link rel="stylesheet" href="/creative-lesson-2024/assets/style-MN8_jJpL.css">
+    <link rel="modulepreload" href="/creative-lesson-2024/assets/app-EAzsM2kq.js"><link rel="modulepreload" href="/creative-lesson-2024/assets/markdown.html-oKrtwnK-.js"><link rel="modulepreload" href="/creative-lesson-2024/assets/markdown.html-EhxqVIFQ.js">
+    <link rel="prefetch" href="/creative-lesson-2024/assets/css-box-model.html-K13nvLpg.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/css-position.html-vOm_4cAz.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/css.html-XaZG8v1k.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/emmet.html-G-c4wZHn.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/html.html-CRWI3wHZ.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/index.html-10HmB_fe.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/ip.html-tiwINjm7.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/uof-name-translate.html-Pti9d54_.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/vscode.html-He3UK-dG.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/404.html-6Yl8cQE3.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/css-box-model.html-oiIUwJOH.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/css-position.html-JrCF3Myq.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/css.html-1DwlNyFc.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/emmet.html-vYJFzQbT.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/html.html-oC1Yp93v.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/index.html-hUMD-HbP.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/ip.html-aVaCVv9H.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/uof-name-translate.html-RQ-bRTvQ.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/vscode.html-__H-pTYA.js" as="script"><link rel="prefetch" href="/creative-lesson-2024/assets/404.html-uyOUI43p.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/creative-lesson-2024/" class=""><img class="logo" src="/creative-lesson-2024/images/logo-paint.png" alt="創意部課程 (2024)"><span class="site-name can-hide" aria-hidden="true">創意部課程 (2024)</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide" aria-label="site navigation"><!--[--><div class="navbar-item"><a class="external-link" href="https://stackblitz.com/" rel="noopener noreferrer" target="_blank" aria-label="Stackblitz"><!--[--><!--]--> Stackblitz <!----><!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://codepen.io/" rel="noopener noreferrer" target="_blank" aria-label="Codepen"><!--[--><!--]--> Codepen <!----><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items" aria-label="site navigation"><!--[--><div class="navbar-item"><a class="external-link" href="https://stackblitz.com/" rel="noopener noreferrer" target="_blank" aria-label="Stackblitz"><!--[--><!--]--> Stackblitz <!----><!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://codepen.io/" rel="noopener noreferrer" target="_blank" aria-label="Codepen"><!--[--><!--]--> Codepen <!----><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><a href="/creative-lesson-2024/vscode.html" class="sidebar-item sidebar-heading" aria-label="前端開發利器 VSCode"><!--[--><!--]--> 前端開發利器 VSCode <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/creative-lesson-2024/markdown.html" class="router-link-active router-link-exact-active sidebar-item sidebar-heading" aria-label="寫筆記必學的 Markdown 語法"><!--[--><!--]--> 寫筆記必學的 Markdown 語法 <!--[--><!--]--></a><!----></li><li><a href="/creative-lesson-2024/uof-name-translate.html" class="sidebar-item sidebar-heading" aria-label="一等一中英文名查詢腳本安裝"><!--[--><!--]--> 一等一中英文名查詢腳本安裝 <!--[--><!--]--></a><!----></li><li><a href="/creative-lesson-2024/html.html" class="sidebar-item sidebar-heading" aria-label="網頁製作基礎 (一) - HTML"><!--[--><!--]--> 網頁製作基礎 (一) - HTML <!--[--><!--]--></a><!----></li><li><a href="/creative-lesson-2024/css-box-model.html" class="sidebar-item sidebar-heading" aria-label="盒子模式"><!--[--><!--]--> 盒子模式 <!--[--><!--]--></a><!----></li><li><a href="/creative-lesson-2024/css.html" class="sidebar-item sidebar-heading" aria-label="網頁製作基礎 (二) - CSS"><!--[--><!--]--> 網頁製作基礎 (二) - CSS <!--[--><!--]--></a><!----></li><li><a href="/creative-lesson-2024/emmet.html" class="sidebar-item sidebar-heading" aria-label="Emmet 工具包"><!--[--><!--]--> Emmet 工具包 <!--[--><!--]--></a><!----></li><li><a href="/creative-lesson-2024/css-selector.html" class="sidebar-item sidebar-heading" aria-label="🔨CSS 選擇器與樣式補充"><!--[--><!--]--> 🔨CSS 選擇器與樣式補充 <!--[--><!--]--></a><!----></li><li><a href="/creative-lesson-2024/css-position.html" class="sidebar-item sidebar-heading" aria-label="CSS 的 Position"><!--[--><!--]--> CSS 的 Position <!--[--><!--]--></a><!----></li><li><a href="/creative-lesson-2024/css-flexbox.html" class="sidebar-item sidebar-heading" aria-label="🔨Flexbox"><!--[--><!--]--> 🔨Flexbox <!--[--><!--]--></a><!----></li><li><a href="/creative-lesson-2024/bootstrap5.html" class="sidebar-item sidebar-heading" aria-label="🔨Bootstrap5"><!--[--><!--]--> 🔨Bootstrap5 <!--[--><!--]--></a><!----></li><li><a href="/creative-lesson-2024/git.html" class="sidebar-item sidebar-heading" aria-label="🔨簡易 Git 入門"><!--[--><!--]--> 🔨簡易 Git 入門 <!--[--><!--]--></a><!----></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h1 id="寫筆記必學的-markdown-語法" tabindex="-1"><a class="header-anchor" href="#寫筆記必學的-markdown-語法"><span>寫筆記必學的 Markdown 語法</span></a></h1><p>Markdown 是一種輕量級標記語言，任何文字編輯器都可以使用，具有易學易用、可讀性高的特色，非常適合用來寫筆記或構思內容。</p><div class="custom-container tip"><p class="custom-container-title">重點提示</p><p>Markdown 不是被設計來取代 HTML 或製作網頁的。</p></div><p>使用 <a href="https://hackmd.io/" target="_blank" rel="noopener noreferrer">HackMD</a> 示範與練習。</p><div class="custom-container tip"><p class="custom-container-title">重點提示</p><p>HackMD 免費版使用時會新增一個隨機網址，知道網址的人都可以編輯，請勿放置敏感資料！</p></div><p>以下是常用的 Markdown 語法：</p><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code># 一級標題
+## 二級標題
+### 三級標題
+
+1. 有序列表
+2. 有序列表
+3. 有序列表
+
+* 無序列表
+* 無序列表
+* 無序列表
+
+- [ ] 待辦事項 (未完成)
+- [ ] 待辦事項 (未完成)
+- [x] 待辦事項 (已完成)
+
+[超連結文字](https://www.example.com)
+
+![圖片替代文字](example.jpg)
+
+|表格|表格|
+|---|---|
+|A|AA|
+|B|BB|
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="使用-vscode-撰寫-markdown" tabindex="-1"><a class="header-anchor" href="#使用-vscode-撰寫-markdown"><span>使用 VSCode 撰寫 Markdown</span></a></h2><p>VSCode 本身即支援 Markdown 的語法高亮，也有許多 Markdown 相關的擴充套件可以輔助撰寫，例如：<code>Markdown All in One</code>。</p><h2 id="markdown-的應用" tabindex="-1"><a class="header-anchor" href="#markdown-的應用"><span>Markdown 的應用</span></a></h2><h3 id="google-文件支援部分-markdown-語法" tabindex="-1"><a class="header-anchor" href="#google-文件支援部分-markdown-語法"><span>Google 文件支援部分 Markdown 語法</span></a></h3><p>預設情況下是關閉的，在「工具 &gt; 偏好設定」中可開啟「自動偵測 Markdown」 支援部分 Markdown 語法，包含：</p><div class="language-text line-numbers-mode" data-ext="text" data-title="text"><pre class="language-text"><code>#~###### 標題
+*+- 無序項目符號
+1. 有序項目符號
+[] 待辦事項
+[]() 超連結
+粗體、斜體
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="custom-container tip"><p class="custom-container-title">重點提示</p><p>善用 Google 文件、Word 的樣式設定，可以快速更新標題、段落、列表…等樣式。避免使用格式複製重覆操作。</p></div><h3 id="使用-markdown-製作簡報" tabindex="-1"><a class="header-anchor" href="#使用-markdown-製作簡報"><span>使用 Markdown 製作簡報</span></a></h3><p>VSCode + VSCode-Reveal 擴充套件可以快速建立簡報，使用一級標題與 <code>---</code> 建立簡報。</p><div class="custom-container tip"><p class="custom-container-title">重點提示</p><p>先將簡報的大綱建立，逐步補充內容，反覆試演並修正內容，最後才使用 Powerpoint 或 Keynote 進行視覺設計。</p></div><h2 id="參考資料" tabindex="-1"><a class="header-anchor" href="#參考資料"><span>參考資料</span></a></h2><ul><li><a href="https://markdown.tw/" target="_blank" rel="noopener noreferrer">Markdown 文件</a></li><li><a href="https://www.markdownguide.org/cheat-sheet/" target="_blank" rel="noopener noreferrer">Markdown Cheat Sheet</a></li></ul><div class="custom-container tip"><p class="custom-container-title">重點提示</p><p>VSCode 會自動偵測目前的文件類型，在下方狀態列右側可以查看與切換文件類型。或使用快速鍵 <code>ctrl/cmd + k</code> 再按 <code>m</code> 並於支援的文件類型列表中選擇。</p></div></div><!--[--><!--]--></div><footer class="page-meta"><!----><!----><!----></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/creative-lesson-2024/assets/app-EAzsM2kq.js" defer></script>
+  </body>
+</html>

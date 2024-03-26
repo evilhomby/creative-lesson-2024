@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+div {
+    --max-width: 800px;
+    height: 50px;
+    background: var(--bgcolor);
+    width: calc(var(--max-width) - var(--random-width));
+}
+</style>
+</head>
+
+<body>
+<div style="--random-width:300px;--bgcolor:red;"></div>
+<div style="--random-width:400px;--bgcolor:green;"></div>
+<div style="--random-width:150px;--bgcolor:yellow;"></div>
+<div style="--random-width:200px;--bgcolor:blue;"></div>
+<div style="--random-width:100px;--bgcolor:pink;"></div>
+</body>
+</html>

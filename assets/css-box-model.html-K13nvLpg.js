@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-228dd455","path":"/css-box-model.html","title":"關於 CSS 的 Box Model (盒子模型)","lang":"en-US","frontmatter":{},"headers":[{"level":3,"title":"Box Model 的四個重要名詞","slug":"box-model-的四個重要名詞","link":"#box-model-的四個重要名詞","children":[]}],"git":{},"filePathRelative":"css-box-model.md"}');export{e as data};

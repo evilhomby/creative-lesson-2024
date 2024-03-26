@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+	body {
+		/*background: url(egg.jpg) no-repeat;*/
+		background-size: 50%;
+		overflow: hidden;
+	}
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+	h3 {
+		text-align: center;
+	}
+	.egg {
+	    position: relative;
+	    width: 219px;
+	    height: 187px;
+	    /*top: 590px;
+	    left: 361px;*/
+	}
+
+	.egg-body {
+	    width: 173px;
+	    height: 185px;
+	    border-radius: 350px 350px 300px 300px/500px 500px 300px 300px;
+	    outline: 3px solid #fff;
+	    border: 1px solid #000;
+	    margin: 0 auto;
+	    position:relative;
+	    background: linear-gradient(90deg, #EBC850, #DDB641);
+	    box-shadow: 1px 1px 3px 3px #000, inset 10px 10px 30px #f2db8d, inset -10px -10px 30px #876b18;
+	    transition: 0.3s border-radius;
+	}
+
+	.egg:hover .egg-body {
+	    border-radius: 400px 400px 300px 300px/500px 500px 400px 400px;
+	}
+
+	.egg-face {
+	    width: 80px;
+	    height: 72px;
+	    border-radius: 60px;
+	    margin: 0 auto;
+	    position: relative;
+	    top: 28px;
+	    background: #DDDFEB;
+	    box-shadow: inset -1px -1px 2px #876b18;
+	    transition: 0.3s transform;
+	}
+
+	.egg:hover .egg-face {
+		transform: translateY(-5px);
+	}
+
+	.egg-eye {
+	    width: 7px;
+	    height: 12px;
+	    background: #333;
+	    border-radius: 7px /12px;
+	    position: absolute;
+	    transition: 0.3s transform;
+	}
+
+	.egg-eye:nth-child(1) {
+		top: 15px;
+		left: 20px;
+		transform: rotate(45deg);
+		box-shadow: 0px 12px 6px pink;
+	}
+
+	.egg:hover .egg-eye:nth-child(1) {
+		transform: rotate(35deg) translateY(-2px);
+	}
+
+	.egg-eye:nth-child(2) {
+		top: 15px;
+		right: 20px;
+		transform: rotate(-45deg);
+		box-shadow: 0px 12px 6px pink;
+	}
+
+	.egg:hover .egg-eye:nth-child(2) {
+		transform: rotate(-35deg) translateY(-2px);
+	}
+
+	#ani-egg .egg-body {
+		animation: 0.5s body infinite alternate;
+	}
+
+	#ani-egg .egg-face {
+		animation: 0.5s face infinite alternate;
+	}
+
+	#ani-egg .egg-eye:nth-child(1) {
+		animation: 0.5s eye-left infinite alternate;
+	}
+
+	#ani-egg .egg-eye:nth-child(2) {
+		animation: 0.5s eye-right infinite alternate;
+	}
+
+	@keyframes body {
+		from{
+			transform: translateY(0px);
+			border-radius: 350px 350px 300px 300px/500px 500px 300px 300px;
+		}
+		to {
+			transform: translateY(-20px);
+			border-radius: 400px 400px 300px 300px/500px 500px 400px 400px;
+		}
+	}
+
+	@keyframes face {
+		from{
+			transform: translateY(0px);
+		}
+		to {
+			transform: translateY(-5px);
+		}
+	}
+
+	@keyframes eye-left {
+		from{
+			transform: rotate(45deg);
+		}
+		to {
+			transform: rotate(35deg) translateY(-5px);
+		}
+	}
+
+	@keyframes eye-right {
+		from{
+			transform: rotate(-45deg);
+		}
+		to {
+			transform: rotate(-35deg) translateY(-5px);
+		}
+	}
+
+	#angry .egg-face {
+		transition: 0.3s background, 0.3s transform;
+	}
+
+	#angry:hover .egg-face {
+		background: pink;
+	}
+
+	#angry:hover .egg-eye:nth-child(1) {
+		transform: rotate(35deg) translateY(-4px);
+	}
+
+	#angry:hover .egg-eye:nth-child(2) {
+		transform: rotate(-60deg) translateY(-2px);
+	}
+
+	.sign {
+		opacity: 0;
+		transition: 0.3s opacity 0.1s;
+		font-size: 1.5rem;
+		transform: translate(-15px, -10px);
+	}
+
+	.egg:hover .sign {
+		opacity: 1;
+	}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="egg">
+		<div class="egg-body">
+			<div class="egg-face">
+				<div class="egg-eye"></div>
+				<div class="egg-eye"></div>
+				<div class="sign">💗</div>
+			</div>
+		</div>
+		<h3>摸我摸我</h3>
+	</div>
+	<div id="ani-egg" class="egg">
+		<div class="egg-body">
+			<div class="egg-face">
+				<div class="egg-eye"></div>
+				<div class="egg-eye"></div>
+			</div>
+		</div>
+		<h3>運動減肥呀！</h3>
+	</div>
+	<div id="angry" class="egg">
+		<div class="egg-body">
+			<div class="egg-face">
+				<div class="egg-eye"></div>
+				<div class="egg-eye"></div>
+				<div class="sign">💢</div>
+			</div>
+		</div>
+		<h3>不要摸我！</h3>
+	</div>
+</div>
+</body>
+</html>
